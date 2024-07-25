@@ -2,35 +2,40 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "PokemonGameLib/1.0.0-beta.1.1": {
+      "PokemonGameLib/1.0.0-beta.1.2.1": {
         "type": "package",
         "compile": {
-          "lib/net8.0/PokemonGameLib.dll": {}
+          "lib/net8.0/PokemonGameLib.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0/PokemonGameLib.dll": {}
+          "lib/net8.0/PokemonGameLib.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
   },
   "libraries": {
-    "PokemonGameLib/1.0.0-beta.1.1": {
-      "sha512": "UCaNhPz0F8ZVhGUqWW8o+u+DCAiQpPezqVCMvDrJ8NYQolh/Mk57+m/QgsW8cva48Iz3FM2p95hiqoYE73lcZA==",
+    "PokemonGameLib/1.0.0-beta.1.2.1": {
+      "sha512": "ITpRygwiNCf0GXzYilFhxdWA2dxrtx4HVLyRWGHFRBxZg9hfj3rbcZh/8CQ3yDUfC1zYkni5WPCmI/0gZW1QeA==",
       "type": "package",
-      "path": "pokemongamelib/1.0.0-beta.1.1",
+      "path": "pokemongamelib/1.0.0-beta.1.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "lib/net8.0/PokemonGameLib.dll",
-        "pokemongamelib.1.0.0-beta.1.1.nupkg.sha512",
+        "lib/net8.0/PokemonGameLib.xml",
+        "pokemongamelib.1.0.0-beta.1.2.1.nupkg.sha512",
         "pokemongamelib.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "PokemonGameLib >= 1.0.0-beta.1.1"
+      "PokemonGameLib >= 1.0.0-beta.1.2.1"
     ]
   },
   "packageFolders": {
@@ -72,7 +77,7 @@
         "dependencies": {
           "PokemonGameLib": {
             "target": "Package",
-            "version": "[1.0.0-beta.1.1, )"
+            "version": "[1.0.0-beta.1.2.1, )"
           }
         },
         "imports": [
