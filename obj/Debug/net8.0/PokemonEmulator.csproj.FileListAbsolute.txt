@@ -15,3 +15,4 @@
 /Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.pdb
 /Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.genruntimeconfig.cache
 /Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/ref/PokemonEmulator.dll
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.sourcelink.json
