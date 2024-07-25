@@ -1,0 +1,17 @@
+/Users/madsludvigsen/Quest/PokemonEmulator/bin/Debug/net8.0/PokemonEmulator
+/Users/madsludvigsen/Quest/PokemonEmulator/bin/Debug/net8.0/PokemonEmulator.deps.json
+/Users/madsludvigsen/Quest/PokemonEmulator/bin/Debug/net8.0/PokemonEmulator.runtimeconfig.json
+/Users/madsludvigsen/Quest/PokemonEmulator/bin/Debug/net8.0/PokemonEmulator.dll
+/Users/madsludvigsen/Quest/PokemonEmulator/bin/Debug/net8.0/PokemonEmulator.pdb
+/Users/madsludvigsen/Quest/PokemonEmulator/bin/Debug/net8.0/PokemonGameLib.dll
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.csproj.AssemblyReference.cache
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.AssemblyInfoInputs.cache
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.AssemblyInfo.cs
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.csproj.CoreCompileInputs.cache
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.csproj.CopyComplete
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.dll
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/refint/PokemonEmulator.dll
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.pdb
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/PokemonEmulator.genruntimeconfig.cache
+/Users/madsludvigsen/Quest/PokemonEmulator/obj/Debug/net8.0/ref/PokemonEmulator.dll

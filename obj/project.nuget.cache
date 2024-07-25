@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XKcrFde4srX7/gFblB4C/E81dDPTk8qeXVOewJk490NdUSNhlJafZK6jK9TOkkCxecj4AJLL0JoXkvgjPPULoA==",
+  "success": true,
+  "projectFilePath": "/Users/madsludvigsen/Quest/PokemonEmulator/PokemonEmulator.csproj",
+  "expectedPackageFiles": [
+    "/Users/madsludvigsen/.nuget/packages/pokemongamelib/1.0.0-beta.1.1/pokemongamelib.1.0.0-beta.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

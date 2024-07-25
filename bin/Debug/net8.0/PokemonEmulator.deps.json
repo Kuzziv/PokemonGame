@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PokemonEmulator/1.0.0": {
+        "dependencies": {
+          "PokemonGameLib": "1.0.0-beta.1.1"
+        },
+        "runtime": {
+          "PokemonEmulator.dll": {}
+        }
+      },
+      "PokemonGameLib/1.0.0-beta.1.1": {
+        "runtime": {
+          "lib/net8.0/PokemonGameLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PokemonEmulator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PokemonGameLib/1.0.0-beta.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UCaNhPz0F8ZVhGUqWW8o+u+DCAiQpPezqVCMvDrJ8NYQolh/Mk57+m/QgsW8cva48Iz3FM2p95hiqoYE73lcZA==",
+      "path": "pokemongamelib/1.0.0-beta.1.1",
+      "hashPath": "pokemongamelib.1.0.0-beta.1.1.nupkg.sha512"
+    }
+  }
+}
