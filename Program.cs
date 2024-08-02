@@ -1,57 +1,59 @@
 ﻿using System;
 using PokemonGameLib.Models;
 
-// Create Pokémons
-Pokemon pikachu = new Pokemon("Pikachu", PokemonType.Electric, 100, 55, 40, 35);
-Pokemon charizard = new Pokemon("Charizard", PokemonType.Fire, 120, 70, 50, 45);
+// Create Pokémon
+Pokemon squirtle = new Pokemon("Squirtle", PokemonType.Water, 15, 43, 24, 25);
+Pokemon bulbasaur = new Pokemon("Bulbasaur", PokemonType.Grass, 15, 41, 24, 24);
 
 // Create Moves
-Move thunderbolt = new Move("Thunderbolt", PokemonType.Electric, 90, 10);
-Move flamethrower = new Move("Flamethrower", PokemonType.Fire, 90, 10);
+Move bubble = new Move("Bubble", PokemonType.Water, 20, 7);
+Move vineWhip = new Move("Vine Whip", PokemonType.Grass, 45, 7);
 
 // Add Moves to Pokémon
-pikachu.AddMove(thunderbolt);
-charizard.AddMove(flamethrower);
+squirtle.AddMove(bubble);
+bulbasaur.AddMove(vineWhip);
 
 // Create Trainers
-var ash = new Trainer("Ash");
-var gary = new Trainer("Gary");
+Trainer ash = new Trainer("Ash");
+ash.AddPokemon(squirtle);
 
-// Add Pokémons to Trainers
-ash.AddPokemon(pikachu);
-gary.AddPokemon(charizard);
+Trainer misty = new Trainer("Misty");
+misty.AddPokemon(bulbasaur);
 
-// Initialize Battle
-var battle = new Battle(ash, gary);
+// Set up a Battle
+Battle battle = new Battle(ash, misty);
 
-// Battle Simulation
-while (!pikachu.IsFainted() && !charizard.IsFainted())
+Console.WriteLine("Battle begins!");
+Console.WriteLine();
+
+// Battle loop
+while (squirtle.HP > 0 && bulbasaur.HP > 0)
 {
-    Console.WriteLine($"{pikachu.Name} HP: {pikachu.HP}");
-    Console.WriteLine($"{charizard.Name} HP: {charizard.HP}");
+    // Ash's Squirtle attacks Misty's Bulbasaur
+    Console.WriteLine($"{ash.Name}'s {squirtle.Name} attacks!");
+    battle.PerformAttack(ash, bubble);
+    Console.WriteLine($"{squirtle.Name} HP: {squirtle.HP}, {bulbasaur.Name} HP: {bulbasaur.HP}");
+    Console.WriteLine();
 
-    // Ash's Pikachu attacks Gary's Charizard
-    battle.PerformAttack(ash, thunderbolt);
-
-    // Check if Charizard has fainted
-    if (charizard.IsFainted())
+    if (bulbasaur.HP <= 0)
     {
-        Console.WriteLine($"{charizard.Name} has fainted!");
-        break; // End battle if Charizard is fainted
+        Console.WriteLine($"{bulbasaur.Name} has fainted!");
+        break;
     }
 
-    // Gary's Charizard attacks Ash's Pikachu
-    battle.PerformAttack(gary, flamethrower);
+    // Misty's Bulbasaur attacks Ash's Squirtle
+    Console.WriteLine($"{misty.Name}'s {bulbasaur.Name} attacks!");
+    battle.PerformAttack(misty, vineWhip);
+    Console.WriteLine($"{squirtle.Name} HP: {squirtle.HP}, {bulbasaur.Name} HP: {bulbasaur.HP}");
+    Console.WriteLine();
 
-    // Check if Pikachu has fainted
-    if (pikachu.IsFainted())
+    if (squirtle.HP <= 0)
     {
-        Console.WriteLine($"{pikachu.Name} has fainted!");
-        break; // End battle if Pikachu is fainted
+        Console.WriteLine($"{squirtle.Name} has fainted!");
+        break;
     }
-
-    Console.WriteLine(); // New line for readability
 }
 
-// Display the result of the battle
-Console.WriteLine(battle.DetermineBattleResult());
+// Determine the result of the battle
+string result = battle.DetermineBattleResult();
+Console.WriteLine(result);
