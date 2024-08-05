@@ -1,6 +1,7 @@
 ﻿using System;
 using PokemonGameLib.Models;
 
+
 // Create Pokémon
 Pokemon squirtle = new Pokemon("Squirtle", PokemonType.Water, 15, 43, 24, 25);
 Pokemon bulbasaur = new Pokemon("Bulbasaur", PokemonType.Grass, 15, 41, 24, 24);
@@ -16,44 +17,43 @@ bulbasaur.AddMove(vineWhip);
 // Create Trainers
 Trainer ash = new Trainer("Ash");
 ash.AddPokemon(squirtle);
+ash.SwitchPokemon(squirtle); // Set the active Pokémon
 
 Trainer misty = new Trainer("Misty");
 misty.AddPokemon(bulbasaur);
+misty.SwitchPokemon(bulbasaur); // Set the active Pokémon
 
 // Set up a Battle
 Battle battle = new Battle(ash, misty);
 
-Console.WriteLine("Battle begins!");
+Console.WriteLine("Welcome to the Pokémon Battle!");
+Console.WriteLine($"{ash.Name} VS {misty.Name}");
+Console.WriteLine($"Battle begins between {squirtle.Name} and {bulbasaur.Name}!");
 Console.WriteLine();
 
 // Battle loop
-while (squirtle.HP > 0 && bulbasaur.HP > 0)
+while (!squirtle.IsFainted() && !bulbasaur.IsFainted())
 {
-    // Ash's Squirtle attacks Misty's Bulbasaur
-    Console.WriteLine($"{ash.Name}'s {squirtle.Name} attacks!");
-    battle.PerformAttack(ash, bubble);
-    Console.WriteLine($"{squirtle.Name} HP: {squirtle.HP}, {bulbasaur.Name} HP: {bulbasaur.HP}");
+    // Current Attacking and Defending Trainers
+    Trainer attackingTrainer = battle.AttackingTrainer;
+    Trainer defendingTrainer = battle.DefendingTrainer;
+
+    // Current Attacking and Defending Pokémon
+    Pokemon attacker = attackingTrainer.CurrentPokemon;
+    Pokemon defender = defendingTrainer.CurrentPokemon;
+
+    // Select the move based on the attacking Pokémon
+    Move selectedMove = attacker == squirtle ? bubble : vineWhip;
+
+    Console.WriteLine($"{attackingTrainer.Name}'s {attacker.Name} attacks with {selectedMove.Name}!");
+
+    // Perform the attack
+    battle.PerformAttack(selectedMove);
+
+    Console.WriteLine($"{attacker.Name} HP: {attacker.CurrentHP} | {defender.Name} HP: {defender.CurrentHP}");
     Console.WriteLine();
-
-    if (bulbasaur.HP <= 0)
-    {
-        Console.WriteLine($"{bulbasaur.Name} has fainted!");
-        break;
-    }
-
-    // Misty's Bulbasaur attacks Ash's Squirtle
-    Console.WriteLine($"{misty.Name}'s {bulbasaur.Name} attacks!");
-    battle.PerformAttack(misty, vineWhip);
-    Console.WriteLine($"{squirtle.Name} HP: {squirtle.HP}, {bulbasaur.Name} HP: {bulbasaur.HP}");
-    Console.WriteLine();
-
-    if (squirtle.HP <= 0)
-    {
-        Console.WriteLine($"{squirtle.Name} has fainted!");
-        break;
-    }
 }
 
-// Determine the result of the battle
+// Determine and display the result of the battle
 string result = battle.DetermineBattleResult();
 Console.WriteLine(result);
