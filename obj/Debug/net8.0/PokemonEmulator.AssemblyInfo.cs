@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokemonEmulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff4761e0fa95e9d1ffa10faddbc4d284215c1b7a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokemonEmulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokemonEmulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

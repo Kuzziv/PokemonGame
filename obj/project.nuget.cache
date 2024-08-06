@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "57Ja/6XQJLF0pPfbGaKsCfZCqmP4qfRuZOnQUS9bbddO5dxgyWoJurRNmC3hB8SyqKrqQAtwm1QCbnpWxOCYPg==",
+  "dgSpecHash": "YiufU3k1SNb4D0wYBsssOsHenfT0fuRCRWGy6L/Lm8R80KL24PG2cv3J53sMi5EtZuzWz5w9JMnAhyo3SGxf/Q==",
   "success": true,
   "projectFilePath": "/Users/madsludvigsen/Quest/PokemonEmulator/PokemonEmulator.csproj",
   "expectedPackageFiles": [
-    "/Users/madsludvigsen/.nuget/packages/pokemongamelib/1.0.0-beta.1.3.0/pokemongamelib.1.0.0-beta.1.3.0.nupkg.sha512"
+    "/Users/madsludvigsen/.nuget/packages/pokemongamelib/8.0.0-alpha/pokemongamelib.8.0.0-alpha.nupkg.sha512"
   ],
   "logs": []
 }

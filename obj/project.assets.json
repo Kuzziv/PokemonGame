@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "PokemonGameLib/1.0.0-beta.1.3.0": {
+      "PokemonGameLib/8.0.0-alpha": {
         "type": "package",
         "compile": {
           "lib/net8.0/PokemonGameLib.dll": {
@@ -18,10 +18,10 @@
     }
   },
   "libraries": {
-    "PokemonGameLib/1.0.0-beta.1.3.0": {
-      "sha512": "6E+0P2mZeM8A0lJ9Uj2kdR+VoTmjrAOrR4jUaz2nf2Hs9CMHHvcNwBvpFWjCigwL3exBPidjMhOxbVX7HnOR9g==",
+    "PokemonGameLib/8.0.0-alpha": {
+      "sha512": "ZSDKcwG6PbPAUsnqs4HXp31GDoBQKv/JWp0zjB3IrltE3R6vl5CjMO51KrglaFX/id7ur7ym43eNqaReIPkmvg==",
       "type": "package",
-      "path": "pokemongamelib/1.0.0-beta.1.3.0",
+      "path": "pokemongamelib/8.0.0-alpha",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -29,14 +29,14 @@
         "RELEASE_NOTES.md",
         "lib/net8.0/PokemonGameLib.dll",
         "lib/net8.0/PokemonGameLib.xml",
-        "pokemongamelib.1.0.0-beta.1.3.0.nupkg.sha512",
+        "pokemongamelib.8.0.0-alpha.nupkg.sha512",
         "pokemongamelib.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "PokemonGameLib >= 1.0.0-beta.1.3.0"
+      "PokemonGameLib >= 8.0.0-alpha"
     ]
   },
   "packageFolders": {
@@ -78,7 +78,7 @@
         "dependencies": {
           "PokemonGameLib": {
             "target": "Package",
-            "version": "[1.0.0-beta.1.3.0, )"
+            "version": "[8.0.0-alpha, )"
           }
         },
         "imports": [
