@@ -62,7 +62,3 @@ For questions or support, please contact:
 
 - **Name**: Mads Ludvigsen
 - **Email**: [Mads72q2@edu.zealand.dk]
-
----
-
-Feel free to adjust any specifics or add further details based on your needs!
